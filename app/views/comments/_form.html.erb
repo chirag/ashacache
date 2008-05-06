@@ -1,0 +1,22 @@
+
+
+<% form_for :comment, :url => hunt_comments_path(@hunt) do |f| %>
+
+		<p>
+			<b>Name</b><br />
+			<%= f.text_field :name %>
+		</p>
+
+		<p>
+			<b>Title</b><br />
+				<%= f.text_field :title %>
+		</p>
+		<p>
+			<b>Body</b><br />
+			<%= f.text_area :body, :cols=>40, :rows=>7 %>
+		</p>
+		
+		<p>
+			<%= f.submit "Add Comment" %>
+		</p>
+<% end %>

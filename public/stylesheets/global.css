@@ -1,0 +1,521 @@
+.colors {
+color: #B9121B; /* red */
+color: #4C1B1B; /* rust */
+color: #F6E497; /* cream */
+color: #FCFAE1; /* off white */
+color: #BD8D46; /* butterscotch */
+color: #333; /* charcoal */
+}
+
+body {
+background: #BD8D46; /* butterscotch */
+font-family: verdana, sans-serif;
+margin:0;
+padding:0;
+}
+
+#wrapper {
+margin:0 auto;
+width:950px;
+background: #F6E497; /* cream */
+border: 2px solid #4C1B1B; /* rust */
+height:100%;
+}
+
+img {
+border:0;
+outline:0;	
+}
+
+#wrapper h1 {
+color: #B9121B; /* red */
+margin:0;
+padding:0 0 15px 0;
+font-size:22px;
+}
+
+p, a {
+font-size:13px;	
+}
+
+ul {
+list-style:none;
+margin:0;
+padding:0;
+}
+
+a {
+text-decoration:none;
+color: #B9121B; /* red */
+border:0;
+outline:0;
+}
+
+a:hover {
+text-decoration:none;
+color: #4C1B1B; /* rust */
+background:none;
+}
+
+pre { overflow: scroll; }
+
+/* ------------------------< header >------------------------ */
+#header {
+height:100px;
+background: #4C1B1B; /* rust */
+border-bottom: 2px solid #4C1B1B; /* rust */
+border-top:1px solid #4C1B1B; /* rust */  /* Why do I need this?  WTF? */
+}
+
+#header h1 {
+color: #FCFAE1; /* off white */
+font-size:40px;
+margin:20px 0 0 20px;
+padding:0;	
+}
+
+#header h1 a{
+margin:0;
+color:inherit;
+font-size:inherit;
+}
+#header h1 a:hover {
+color: #B9121B; /* red */
+}
+
+#header h2 {
+color: #F6E497; /* cream */
+font-size:13px;
+margin:10px 0 0 20px;
+font-weight:normal;
+}
+
+#header h2 b {
+font-weight:normal;
+padding-right:30px;	
+}
+/* ------------------------< admin nav >------------------------ */
+
+#adminNav {
+width:950px;
+margin: 0 auto;	
+padding:10px 0;
+}
+
+#adminRightFloater {
+float:right	
+}
+
+#adminNav ul {
+list-style: none;
+display:inline;
+float:left;
+}
+
+#adminNav ul li {
+display:inline;
+float:left;
+color: #4C1B1B; /* rust */
+font-weight:bold;
+font-size:13px;
+}
+
+#adminNav a {
+text-decoration:none;
+color: #B9121B; /* red */
+font-style:normal;
+font-size:12px;
+margin: 8px 10px;
+padding:3px;
+}
+
+#adminNav a:hover {
+color: #FCFAE1; /* off white */
+background:none;
+}
+
+#adminNav input {
+margin-right:10px;
+}
+
+/* ------------------------< main nav >------------------------ */
+
+#mainNav {
+list-style: none;
+display:inline;
+background: #B9121B; /* red */
+margin:0;
+padding:0;
+float:right;
+width:100%;
+}
+
+#mainNav li {
+display:inline;
+float:right;
+margin: 5px 10px;
+font-size:13px;
+font-weight:normal;
+}
+
+#mainNav a {
+text-decoration:none;
+color: #FCFAE1; /* off white */
+font-style:bold;
+}
+
+#mainNav a:hover {
+color: #F6E497; /* cream */
+background:none;
+}
+
+/* ------------------------< hunts index >------------------------ */
+
+.huntWrapper {
+height:270px;
+width:95ppx;
+border-top: solid 2px #4C1B1B; /* rust */
+}
+
+.imageWrapper {
+float:left;
+width:250px;
+height:250px;
+margin:10px;
+padding-right:10px;
+border-right: 1px solid #B9121B; /* red */	
+}
+
+.huntWrapper .imageWrapper a img {
+border:1px solid #F6E497; /* cream */	
+}
+
+.huntWrapper .imageWrapper a:hover img {
+border:1px solid #4C1B1B; /* rust */	
+}
+
+.descriptionWrapper {
+height:225px;
+width:655px;
+float:right;
+margin:10px 10px 0 0;
+padding:0;
+}
+
+#wrapper .huntWrapper .descriptionWrapper h1  {
+font-size:22px;
+color: #4C1B1B; /* rust */
+margin:5px 0 0 0;
+}
+
+.descriptionWrapper h1 a {
+color: #4C1B1B; /* rust */
+}
+
+.descriptionWrapper h1 a:hover {
+color: #B9121B; /* red */
+}
+
+.descriptionWrapper h2 {
+color: #B9121B; /* red */
+font-size:14px;
+font-style:italic;
+margin:3px 0 0 0;
+padding: 0 0 0 0;
+}
+
+.descriptionWrapper h3 {
+color: #333; /* charcoal */
+font-size:11px;
+margin:8px 0 ;
+padding: 0 0 0 0;
+font-weight:normal;
+}
+
+.descriptionWrapper p {
+font-size: 12px;
+line-height:15px;
+margin:7px 10px 0 0;
+color: #333; /* charcoal */
+}
+
+/* ------------------------< hunts show >------------------------ */
+
+
+#showHuntCopyCol {
+margin:20px;
+width:470px;
+padding-right:20px;
+border-right: 1px solid #4C1B1B; /* rust */
+}
+#wrapper #showHuntCopyCol h1 {
+padding-bottom:15px;
+}
+
+#showHuntCopyCol li {
+font-size:12px;
+color: #333; /* charcoal */
+font-style:italic;
+line-height:18px;
+}
+
+#showHuntCopyCol li b {
+color: #4C1B1B; /* rust */
+font-style:normal;
+}
+
+#showHuntCopyCol li i {
+color: #4C1B1B; /* rust */
+font-style:normal;
+font-size:9px;
+font-weight:normal;
+padding-right:10px;
+}
+
+#showHuntCopyCol h1 {
+margin:0;
+padding:0;
+}
+
+#showHuntImageCol {
+float:right;
+padding:20px 20px 0 0;
+width:400px;
+}
+
+#showHuntImageCol img {
+border: solid 1px #4C1B1B; /* rust */
+}
+
+#map_div {
+border: solid 1px #4C1B1B; /* rust */
+margin-top:20px;
+}
+
+
+/* ------------------------< hunt sub nav >------------------------ */
+
+.huntSubNav {
+list-style: none;
+display:inline;
+margin:0;
+padding:0;
+}
+
+.huntSubNav li {
+display:inline;
+float:right;
+margin: 5px 15px 5px 0;
+
+}
+
+.huntSubNav a {
+text-decoration:none;
+color: #333; /* charcoal */
+font-style:bold;
+}
+
+.huntSubNav a:hover {
+color: #FCFAE1; /* off white */
+background:none;
+}
+
+/* ------------------------< hunt edit >------------------------ */
+
+#huntEditWrap {
+margin:0 20px 20px 20px;	
+}
+
+#wrapper #huntEditWrap h1 {
+margin:10px 0 0 0;	
+}
+
+#huntEditWrap img {
+margin-right: 10px;	
+}
+
+p.flash {
+margin:20px;	
+}
+
+/* ------------------------< hunt comment >------------------------ */
+
+.comment_wrap {
+border: 2px solid #4C1B1B; /* rust */
+/*gecko*/
+-moz-border-radius: 8px;
+/*webkit*/
+-webkit-border-radius: 8px;
+/*future proofing*/
+border-radius: 8px;
+width:450px;
+margin: 0 0 20px 0;
+background: #eee;
+}
+
+.comment_wrap p {
+padding:7px 10px;
+margin:0;	
+}
+
+.comment_wrap ul {
+border-bottom: 1px solid #4C1B1B; /* rust */
+height:2em;
+}
+
+#wrapper .comment_wrap ul li {
+font-size:.8em;
+font-weight:bold;
+padding:5px 10px;
+margin:0px;
+display:inline;
+float:left;
+color: #4C1B1B; /* rust */
+}
+
+#wrapper .comment_wrap ul li.comment_name {
+text-align:right;
+float:right;
+color: #333; /* charcoal */
+font-size:.7em;
+}
+
+
+/* ------------------------< members index >------------------------ */
+
+#memberList {
+margin:0 0 0 20px;
+}
+
+#memberList li {
+font-weight:bold;	
+color: #4C1B1B; /* rust */
+display:inline;
+font-size:12px;
+line-height:25px;
+}
+
+#memberList li a {
+font-size:10px;
+color: #333; /* charcoal */
+}
+
+.adminLinks {
+}
+
+.huntList {
+margin:0 0 0 20px;	
+}
+
+#memberList .huntList li {
+display:block;
+line-height:14px;	
+}
+
+/* ------------------------< members index >------------------------ */
+
+#memberShow {
+display:block;		
+}
+
+#memberShow li {
+padding:10px 20px;
+color: #333; /* charcoal */
+font-style:italic;
+}
+
+#memberShow li b {
+color: #4C1B1B; /* rust */
+font-style:normal;
+}
+
+/* ------------------------< members edit >------------------------ */
+
+#memberEditWrap {
+margin:0 20px 20px 20px;	
+}
+/* ------------------------< documentation / faq index >------------------------ */
+
+#documentation_wrap {
+margin: 5px 20px 20px 20px;
+}
+
+#documentation_wrap h2 {
+margin:20px 0 0 0;
+color: #4C1B1B; /* rust */
+}	
+
+#documentation_wrap a {
+color: #B9121B; /* red */
+font-weight:bold;
+}
+
+#documentation_wrap a:hover {
+color: #4C1B1B; /* rust */
+background:none;	
+}
+
+#documentation_wrap ul {
+list-style: disc;
+margin:15px;
+}
+
+#doc_sub_menu {
+list-style:none;
+margin:10px 20px 30px 20px;
+padding-bottom:10px;
+border-bottom:1px dashed #666;
+}
+
+#doc_sub_menu li {
+	list-style:none;
+	display:inline;
+	padding-right:20px;
+	font-size:12px;
+	font-weight:bold;
+	
+}
+
+#doc_sub_menu li a {
+	list-style:none;
+	color: #666;
+}
+
+#doc_sub_menu li a:hover {
+	list-style:none;
+	color: #4C1B1B; /* rust */	
+}
+
+/* ------------------------< copyright >------------------------ */
+
+#copyright {
+	margin:5px auto 20px auto;
+	width:950px;
+}
+
+#copyright ul {
+display:inline;
+float:left;
+margin:0;
+padding:0;
+margin:0 0 10px 200px;
+}
+
+#copyright ul li {
+display:inline;
+float:left;
+padding:0 10px;
+color: #333; /* charcoal */
+}
+
+#copyright ul li a {
+color:inherit;	
+}
+
+#copyright ul li a:hover {
+color:inherit;
+color: #4C1B1B; /* rust */	
+}
+
+
+

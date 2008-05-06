@@ -1,0 +1,53 @@
+<div id="huntEditWrap">
+	<h1>Editing hunt</h1>
+	
+<%= error_messages_for :hunt %>
+
+<%# form_for(@hunt) do |f| %>
+<%- form_for(@hunt, :url => { :action=>'update'}, 
+                      :html => { :multipart => true }) do |f| #notice @hunt instead of :hunt ?? -%>
+			<p>
+			<b>Name</b><br>
+			<%= f.text_field :name %>
+		</p>
+		<p>
+			<b>Location</b><br>
+			<%= f.text_field :location %>
+		</p>
+		<p>
+			<b>Length</b> 
+			<%= select( "hunt", "length", {  ""=>"","0.5" => ".5", "1" => "1", "1.5" => "1.5", "2" => "2"}) %>
+		</p>
+		<p>
+			<b>Difficulty</b> 
+			<%= select( "hunt", "difficulty", { ""=>"","easy" => "easy", "moderate" => "moderate", "difficult" => "difficult", "extreme" => "extreme"}) %>
+		</p>
+		<p>
+			<b>Latitude</b> <%= select( "hunt", "latitude_north_south", { "N"=>"N","S" => "S"}) %> DD: <%= f.text_field :latitude_degree, :size=>3, :maxlength=>3 %> MM: <%= f.text_field :latitude_minute, :size=>2, :maxlength=>2 %> SS: <%= f.text_field :latitude_second, :size=>2, :maxlength=>2 %>
+		</p>
+		<p>
+			<b>Longitude</b> <%= select( "hunt", "longitude_east_west", {"E"=>"E","W" => "W"}) %> DD: <%= f.text_field :longitude_degree, :size=>3, :maxlength=>3 %> MM: <%= f.text_field :longitude_minute, :size=>2, :maxlength=>2 %> SS: <%= f.text_field :longitude_second, :size=>2, :maxlength=>2 %>
+		</p>
+		<p>	
+			<b>Zoom Level</b>  <%= select( "hunt", "view_level", [[ "Select a Zoom Level", "" ]] + View_level::LEVELS) %>  ( higher numbers are closer to the ground. 10 is normal)
+		</p>
+		<p>	
+			<b>Description</b><br>
+			<%= f.text_area :description, :cols=>100, :rows=>10 %>
+		</p>
+		<p>
+			<b>Directions</b><br>
+			<%= f.text_area :directions, :cols=>100, :rows=>10 %>
+		</p>
+		<p>
+			<b>Associate Image:</b>
+			<%= file_field 'image','uploaded_data' %>
+		</p>
+		<p>
+			<%= f.submit "Update" %>
+		</p>
+<% end %>
+
+<%= link_to 'Show', @hunt %> |
+<%= link_to 'Back', hunts_path %>
+</div>

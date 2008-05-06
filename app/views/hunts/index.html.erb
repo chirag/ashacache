@@ -1,0 +1,27 @@
+<!-- Change to the index for Rsync -->
+<% for hunt in @hunts %>
+<div class="huntWrapper">
+<div class="imageWrapper">	
+	<% if !hunt.image.blank? %> 
+	<%= link_to (image_tag hunt.image.public_filename(:thumb)), hunt %>
+	<% end %>
+</div>
+
+<div class="descriptionWrapper">
+<h1><%= link_to hunt.name, hunt %></h1>
+<h2><%=h hunt.location %></h2>
+<h3><b>Submitted by:</b> <%=h Member.find(hunt.member_id).name %></h3>
+<%= markdown truncate(hunt.description,1050, "...") %></div>
+	<ul class="huntSubNav">
+
+<% if current_member or admin? %>
+	<% if Member.find(hunt.member_id).id == current_member.id or admin? %>
+	<li><%= link_to 'Show', hunt %></li>
+	<li><%= link_to 'Edit', edit_hunt_path(hunt) %></li>
+	<li><%= link_to 'Destroy', hunt, :confirm => 'Are you sure?', :method => :delete %></li>
+
+	<% end %>
+<% end %>
+</ul></div>
+
+<% end %>

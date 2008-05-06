@@ -1,0 +1,11 @@
+<html><head><title>Lance Wig - Web 289 Scavenger Hunt Ruby Application</title></head><body>
+<p>
+	Lance Wig WEB-289 Scavenger Hunt.<br>DESCRIPTION: The scavenger hunt site is an idea where users can create various scavenger hunts. Other users log onto the hunt and try to find a hidden geo-catch location in the Asheville area. Various file and classes exist for "authenticated system" which is the standard "bells and whistles" authentication class for ROR. I may or may not keep it due to the complexity involved.<br>
+	There is a two main classes for hunts and members. Members can create many hunts. Members can also subscribe to other hunts.
+	
+	<p>Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+</p>
+
+<a href="app/index.html">link to application classes, models etc</a>
+
+</body></html>

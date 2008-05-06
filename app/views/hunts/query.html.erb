@@ -1,0 +1,12 @@
+<div id="huntEditWrap">
+	<h1>Search for a Hunt</h1>
+	
+
+	<% form_tag({ :action => 'search' },{ :class => 'hunt' }) do %>
+	
+	<%= text_field_tag( :query ) %>
+	<%= submit_tag( 'Search') %>
+	<% end %>
+<br />
+<%= link_to 'Back', hunts_path %>
+</div>

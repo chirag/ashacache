@@ -1,0 +1,52 @@
+
+<div id="memberEditWrap">
+	
+	<h1>New member</h1>
+
+<%= error_messages_for :member %>
+
+<% form_for(@member) do |f| %>
+
+  <p>
+    <b>User Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+ <p>
+    <b>Password</b><br />
+    <%= f.password_field :password %>
+  </p>  
+<p>
+	
+ <p>
+    <b>Password Copy</b><br />
+    <%= f.password_field :password_confirmation %>
+  </p>  
+<p>
+    <b>City</b><br />
+    <%= f.text_field :city %>
+  </p>
+
+  </p>  
+<p>
+    <b>State</b><br />
+
+	  <%= select( "member", "state", [[ "Select a State", "" ]] + State::NAMES) %> 
+  </p>
+
+  </p>  
+<p>
+    <b>Zip</b><br />
+    <%= f.text_field :zip, :length=>5,:maxlength=>5 %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', members_path %>
+</div>

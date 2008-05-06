@@ -1,0 +1,13 @@
+<div id="memberEditWrap">
+	<h1>Reset Password</h1>
+	<p>Please enter your email, so we can send a new password.</p>
+	
+<%= error_messages_for :member %>
+
+<% form_tag({ :action => 'reset' },{ :class => 'member' }) do %>
+
+<%= text_field_tag( :email ) %>
+<%= submit_tag( 'Reset') %>
+<% end %>
+
+</div>

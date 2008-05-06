@@ -1,0 +1,34 @@
+<div id="memberEditWrap">
+
+<h1>Listing members</h1>
+<ul id="memberList">
+<% for member in @members %>
+	<li><%=h member.name %>
+    
+	<% if admin? %>
+			</li>
+			<li><%= link_to 'Show', member %></li>
+		    <li><%= link_to 'Edit', edit_member_path(member) %></li>
+		    <li><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %>
+		<% end %>
+		
+	
+		<% unless member.hunts.empty? %>
+			<ul class='huntList'>
+			<% for hunt in member.hunts #Remember a member 'has many' hunts  %>
+			 <li><%= link_to hunt.name, hunt_path(hunt) %></li>
+			<% end %>
+		</ul>
+		<% else %>
+		<br />
+		<% end %>
+		
+		
+	</li>
+<% end %>
+</ul>
+<%# altenate way of doing things with map %>
+<%# @members.map { |m| m.name + ": " + m.hunts.map(&:name).join(', ') + "<br />"} %>
+
+<%= link_to 'New member', new_member_path %>
+</div>

@@ -1,0 +1,18 @@
+<%= render :partial => "submenu" %>
+
+<div id="documentation_wrap">
+
+<h1>  <%=h @documentation.title %></h1>
+
+  <%= markdown @documentation.body %>
+
+<p>
+  <b>Published:</b>
+  <%=h @documentation.published %>
+</p>
+<% if admin? %>
+<%= link_to 'New', new_documentation_path %> |
+<%= link_to 'Edit', edit_documentation_path(@documentation) %> |
+<% end %>
+<%= link_to 'Back', documentations_path %>
+</div>

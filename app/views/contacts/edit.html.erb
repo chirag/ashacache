@@ -1,0 +1,30 @@
+<div id="documentation_wrap">
+
+<h1>Editing contact</h1>
+
+<%= error_messages_for :contact %>
+
+<% form_for(@contact) do |f| %>
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @contact %> |
+<%= link_to 'Back', contacts_path %>
+</div>

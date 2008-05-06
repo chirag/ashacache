@@ -1,0 +1,30 @@
+<%= render :partial => "submenu" %>
+
+<div id="documentation_wrap">
+
+<h1>Documentation</h1>
+
+
+<% for documentation in @documentations %>
+   <% if documentation.published or admin? %>
+   <h2><%= link_to documentation.title, documentation %></h2>
+   <p><%= markdown documentation.body %></p>
+
+  <% if admin? %>
+ 	<%= link_to 'Show', documentation %> | 
+
+	
+	<% if admin? %>
+	<%= link_to 'New', new_documentation_path %> |
+	<%= link_to 'Edit', edit_documentation_path(documentation) %> |
+   <%= link_to 'Destroy', documentation, :confirm => 'Are you sure?', :method => :delete %> |
+<% end %>
+<% end %>
+	<% end %>
+
+<% end %>
+
+<br />
+
+</div>
+

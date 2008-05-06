@@ -1,0 +1,66 @@
+<%= GMap.header %>
+<%= @hunt.map.to_html %>
+<div id="showHuntImageCol">
+	<% if !@hunt.image.nil? %> 
+	<%= image_tag @hunt.image.public_filename %>
+	<% end %>
+	<%= @hunt.map.div(:width => 400, :height => 400) %> 
+</div>
+<div id="showHuntCopyCol">
+<h1><%=h @hunt.name %></h1>
+<ul>
+	<li>
+		<b>Location:</b> <%=h @hunt.location %>
+	</li>
+	<li>
+		<b>Submitted by:</b> <%=h Member.find(@hunt.member_id).name %>
+	</li>
+	<li>
+		<b>Length</b> <%=h @hunt.length %> Hours
+	</li>
+	<li>
+		<b>Difficulty</b> <%=h @hunt.difficulty %>
+	</li>
+	<li>
+		<b>Latitude</b> <%=h @hunt.latitude_degree_display %> <i>(DD:MM:SS)</i> 
+		<%=  @hunt.latitude %>  <i>(Decimal)</i>
+	</li>
+	<li>
+		<b>Longitude</b> <%=h @hunt.longitude_degree_display %> <i>(DD:MM:SS)</i> 
+		<%=  @hunt.longitude %>  <i>(Decimal)</i>
+	</li>
+	<li><b>Zoom Level</b> <%=h @hunt.view_level %></li>
+</ul>
+<p>
+  <b>Description:</b></p>
+  <%= markdown @hunt.description %>
+<p>
+  <b>Directions</b><br />
+  <%= markdown @hunt.directions %>
+
+<% if @comment %>
+<%# "The comment had errors!  #{ @comment.errors.inspect }" %>
+<%= error_messages_for :comment %>
+<% end %>
+
+<%  if @hunt.has_comments? %>
+
+<h3>Comments</h3>
+<ul>
+	<%= render :partial => "comments/comment",
+	 			:collection => @hunt.comments %>
+</ul>
+<% end %>
+
+<h3>Add a Comment</h3>
+<%= render :partial => "comments/form" %>
+<ul>
+</ul>
+</p>
+<% if current_member or admin? %>
+<%= link_to 'Edit', edit_hunt_path(@hunt) %> |
+<%= link_to 'Back', hunts_path %> |
+<%= link_to 'Destroy', @hunt, :confirm => 'Are you sure?', :method => :delete %>
+<% end %>
+<br clear="both" />
+</div>

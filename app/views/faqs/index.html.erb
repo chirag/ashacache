@@ -1,0 +1,21 @@
+<div id="documentation_wrap">
+<h1>Frequently Asked Questions</h1>
+
+<% for faq in @faqs %>
+   <% if faq.published or admin? %>
+   <h2><%=h faq.title %></h2>
+   <p><%= markdown faq.body %></p>
+
+  <% if admin? %>
+ 	<%= link_to 'Show', faq %> | 
+   <%= link_to 'Edit', edit_faq_path(faq) %> |
+   <%= link_to 'Destroy', faq, :confirm => 'Are you sure?', :method => :delete %> |
+	<%= link_to 'New', new_faq_path %>
+<% end %>
+	<% end %>
+
+<% end %>
+
+<br />
+
+</div>

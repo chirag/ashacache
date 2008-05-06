@@ -1,0 +1,16 @@
+<div id="memberEditWrap">
+
+<ul id="memberShow">
+  <li><b>Name:</b> <%=h @member.name %></li>
+<li><b>Email:</b> <%=h @member.email %></li>
+<li><b>City:</b> <%=h @member.city %>, <%=h @member.state %> <%=h @member.zip %></li>
+
+</ul>
+
+<%#owns hunts? /// @member.owned_hunts.inspect %><br />
+<%# has hunts? /// @member.hunts.inspect %>
+<% if current_member or admin? %>
+	<p id="action_menu"><%= link_to 'Edit', edit_member_path(@member) %> |
+	<%= link_to 'Back', members_path %></p>
+<% end %>
+</div>
