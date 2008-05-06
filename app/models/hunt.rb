@@ -100,7 +100,7 @@ class Hunt < ActiveRecord::Base
    end
 
    # Take your three sets of numbers and put them together, 
-   # using the symbols for degrees (°), minute (‘), and second (') (i.e. 121°8'6' longitude)  
+   # using the symbols for degrees (\°), minute (‘), and second (') (i.e. 121\°8'6' longitude)  
    if return_type == 'string'
      return  compass + ' ' + (degree.abs).to_s + "\° " + minute + "‘ " + second + "'"
    elsif return_type == 'degree'
