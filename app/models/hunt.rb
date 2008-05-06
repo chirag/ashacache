@@ -1,6 +1,6 @@
 class Hunt < ActiveRecord::Base
   
-  # A Hunt can have many comments.
+  # A Hunt can have many comments
   has_many :comments
 
   # A Member can have many hunts.
@@ -102,7 +102,7 @@ class Hunt < ActiveRecord::Base
    # Take your three sets of numbers and put them together, 
    # using the symbols for degrees (°), minute (‘), and second (') (i.e. 121°8'6' longitude)  
    if return_type == 'string'
-     return  compass + ' ' + (degree.abs).to_s + "° " + minute + "‘ " + second + "'"
+     return  compass + ' ' + (degree.abs).to_s + "\° " + minute + "‘ " + second + "'"
    elsif return_type == 'degree'
      return (degree.abs).to_s
    elsif return_type == 'minute'
