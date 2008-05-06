@@ -1,7 +1,6 @@
-
 class Hunt < ActiveRecord::Base
   
-  # A Hunt can have many comments
+  # A Hunt can have many comments.
   has_many :comments
 
   # A Member can have many hunts.
