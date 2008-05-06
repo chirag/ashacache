@@ -78,7 +78,7 @@ class Hunt < ActiveRecord::Base
     decimal_to_degrees longitude, 'string','lon'
   end
 
-  def decimal_to_degrees decimal, return_type, lat_or_lon # decimal conversion (i.e. in 121.135°) 
+  def decimal_to_degrees decimal, return_type, lat_or_lon # decimal conversion (i.e. in 121.135/°) 
       degree_minute = decimal.to_s.split "."
       degree = degree_minute[0].to_i # The whole units of degrees will remain the same (i.e. 121)
       minute_second = ((("." + degree_minute[1]).to_f) * 60).to_s.split "."  #Multiply the decimal by 60 (i.e. .135 * 60 = 8.1).
@@ -147,7 +147,7 @@ class Hunt < ActiveRecord::Base
   # This mehtod is used in the very beginning when hunt is created
   # The Google Map API needs a decimal format, but the form sends a DD:MM:SS format
   # to be more user friendly to humans.
-  # What Google Maps wants: 37.4419, -122.1419  /// Converts to N 37° 26.514 W 122° 08.514
+  # What Google Maps wants: 37.4419, -122.1419  /// Converts to N 37/° 26.514 W 122/° 08.514
   def degrees_to_decimal
     if errors.length == 0 # make sure it's valid ... no validation errors
     # Set the latitude varible be concatenating the values of DD:MM:SS
