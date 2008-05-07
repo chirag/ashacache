@@ -1,3 +1,6 @@
+
+/* ------------------------< general styles >------------------------ */
+
 .colors {
 color: #B9121B; /* red */
 color: #4C1B1B; /* rust */
@@ -27,9 +30,9 @@ border:0;
 outline:0;	
 }
 
-#wrapper h1 {
+h1 {
 color: #B9121B; /* red */
-margin:0;
+margin:10px 0 0 0;
 padding:0 0 15px 0;
 font-size:22px;
 }
@@ -57,27 +60,32 @@ color: #4C1B1B; /* rust */
 background:none;
 }
 
-pre { overflow: scroll; }
+pre { overflow: scroll; } /* used for code snippets */
+
+p.flash { /* the errors class of rails */
+padding-top:20px;
+}
+
+#errorExplanation ul {
+	list-style:none;
+	margin-left:20px;
+}
 
 /* ------------------------< header >------------------------ */
 #header {
 height:100px;
 background: #4C1B1B; /* rust */
-border-bottom: 2px solid #4C1B1B; /* rust */
-border-top:1px solid #4C1B1B; /* rust */  /* Why do I need this?  WTF? */
 }
 
 #header h1 {
-color: #FCFAE1; /* off white */
-font-size:40px;
-margin:20px 0 0 20px;
-padding:0;	
+padding:35px 0 0 30px;
+margin:0;
 }
 
 #header h1 a{
 margin:0;
-color:inherit;
-font-size:inherit;
+color: #FCFAE1; /* off white */
+font-size:35px;
 }
 #header h1 a:hover {
 color: #B9121B; /* red */
@@ -85,29 +93,25 @@ color: #B9121B; /* red */
 
 #header h2 {
 color: #F6E497; /* cream */
-font-size:13px;
-margin:10px 0 0 20px;
+font-size:12px;
+margin:10px 0 0 30px;
 font-weight:normal;
 }
 
-#header h2 b {
-font-weight:normal;
-padding-right:30px;	
-}
 /* ------------------------< admin nav >------------------------ */
 
 #adminNav {
 width:950px;
 margin: 0 auto;	
 padding:10px 0;
+height:30px;
 }
 
-#adminRightFloater {
-float:right	
+#adminRightFloater { 
+float:right;
 }
 
 #adminNav ul {
-list-style: none;
 display:inline;
 float:left;
 }
@@ -121,7 +125,6 @@ font-size:13px;
 }
 
 #adminNav a {
-text-decoration:none;
 color: #B9121B; /* red */
 font-style:normal;
 font-size:12px;
@@ -144,7 +147,7 @@ margin-right:10px;
 list-style: none;
 display:inline;
 background: #B9121B; /* red */
-margin:0;
+margin:0 0 10px 0;
 padding:0;
 float:right;
 width:100%;
@@ -173,21 +176,22 @@ background:none;
 
 .huntWrapper {
 height:270px;
-width:95ppx;
+width:950px;
 border-top: solid 2px #4C1B1B; /* rust */
 }
 
 .imageWrapper {
 float:left;
-width:250px;
+width:260px;
 height:250px;
-margin:10px;
 padding-right:10px;
 border-right: 1px solid #B9121B; /* red */	
 }
 
 .huntWrapper .imageWrapper a img {
 border:1px solid #F6E497; /* cream */	
+margin-left:10px;
+margin-top:10px;
 }
 
 .huntWrapper .imageWrapper a:hover img {
@@ -196,23 +200,23 @@ border:1px solid #4C1B1B; /* rust */
 
 .descriptionWrapper {
 height:225px;
-width:655px;
+width:660px;
 float:right;
-margin:10px 10px 0 0;
-padding:0;
+margin-top:10px;
 }
 
-#wrapper .huntWrapper .descriptionWrapper h1  {
-font-size:22px;
+
+#wrapper .descriptionWrapper h1 {
+margin-bottom:0;
+padding-bottom:0;
+}
+
+#wrapper .descriptionWrapper h1 a {
 color: #4C1B1B; /* rust */
-margin:5px 0 0 0;
+font-size:18px;
 }
 
-.descriptionWrapper h1 a {
-color: #4C1B1B; /* rust */
-}
-
-.descriptionWrapper h1 a:hover {
+#wrapper .descriptionWrapper h1 a:hover {
 color: #B9121B; /* red */
 }
 
@@ -248,9 +252,7 @@ width:470px;
 padding-right:20px;
 border-right: 1px solid #4C1B1B; /* rust */
 }
-#wrapper #showHuntCopyCol h1 {
-padding-bottom:15px;
-}
+
 
 #showHuntCopyCol li {
 font-size:12px;
@@ -272,11 +274,6 @@ font-weight:normal;
 padding-right:10px;
 }
 
-#showHuntCopyCol h1 {
-margin:0;
-padding:0;
-}
-
 #showHuntImageCol {
 float:right;
 padding:20px 20px 0 0;
@@ -292,7 +289,6 @@ border: solid 1px #4C1B1B; /* rust */
 margin-top:20px;
 }
 
-
 /* ------------------------< hunt sub nav >------------------------ */
 
 .huntSubNav {
@@ -306,18 +302,17 @@ padding:0;
 display:inline;
 float:right;
 margin: 5px 15px 5px 0;
-
 }
 
 .huntSubNav a {
+font-size:11px;
 text-decoration:none;
 color: #333; /* charcoal */
-font-style:bold;
+font-weight:bold;
 }
 
 .huntSubNav a:hover {
-color: #FCFAE1; /* off white */
-background:none;
+color: #4C1B1B; /* rust */
 }
 
 /* ------------------------< hunt edit >------------------------ */
@@ -326,16 +321,8 @@ background:none;
 margin:0 20px 20px 20px;	
 }
 
-#wrapper #huntEditWrap h1 {
-margin:10px 0 0 0;	
-}
-
-#huntEditWrap img {
-margin-right: 10px;	
-}
-
 p.flash {
-margin:20px;	
+margin:20px 0 0 20px;	
 }
 
 /* ------------------------< hunt comment >------------------------ */
@@ -380,7 +367,6 @@ color: #333; /* charcoal */
 font-size:.7em;
 }
 
-
 /* ------------------------< members index >------------------------ */
 
 #memberList {
@@ -391,12 +377,12 @@ margin:0 0 0 20px;
 font-weight:bold;	
 color: #4C1B1B; /* rust */
 display:inline;
-font-size:12px;
+font-size:16px;
+line-height:18px;
 line-height:25px;
 }
 
 #memberList li a {
-font-size:10px;
 color: #333; /* charcoal */
 }
 
@@ -409,10 +395,10 @@ margin:0 0 0 20px;
 
 #memberList .huntList li {
 display:block;
-line-height:14px;	
+font-size:12px;
 }
 
-/* ------------------------< members index >------------------------ */
+/* ------------------------< members show >------------------------ */
 
 #memberShow {
 display:block;		
@@ -435,6 +421,7 @@ font-style:normal;
 margin:0 20px 20px 20px;	
 }
 /* ------------------------< documentation / faq index >------------------------ */
+/* Used for FAQ, Documentation and Contact */
 
 #documentation_wrap {
 margin: 5px 20px 20px 20px;
@@ -443,6 +430,7 @@ margin: 5px 20px 20px 20px;
 #documentation_wrap h2 {
 margin:20px 0 0 0;
 color: #4C1B1B; /* rust */
+font-size:15px;poo
 }	
 
 #documentation_wrap a {
@@ -468,29 +456,29 @@ border-bottom:1px dashed #666;
 }
 
 #doc_sub_menu li {
-	list-style:none;
-	display:inline;
-	padding-right:20px;
-	font-size:12px;
-	font-weight:bold;
-	
+list-style:none;
+display:inline;
+padding-right:20px;
+font-size:12px;
+font-weight:bold;
 }
 
 #doc_sub_menu li a {
-	list-style:none;
-	color: #666;
+list-style:none;
+color: #666;
 }
 
 #doc_sub_menu li a:hover {
-	list-style:none;
-	color: #4C1B1B; /* rust */	
+list-style:none;
+color: #4C1B1B; /* rust */	
 }
 
 /* ------------------------< copyright >------------------------ */
 
 #copyright {
-	margin:5px auto 20px auto;
-	width:950px;
+margin:5px auto 20px auto;
+width:950px;
+padding-bottom:10px;
 }
 
 #copyright ul {
@@ -509,13 +497,10 @@ color: #333; /* charcoal */
 }
 
 #copyright ul li a {
-color:inherit;	
+color: #333; /* charcoal */
 }
 
 #copyright ul li a:hover {
 color:inherit;
 color: #4C1B1B; /* rust */	
 }
-
-
-

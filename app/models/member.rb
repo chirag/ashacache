@@ -9,21 +9,24 @@ class Member < ActiveRecord::Base
   
   
   # Basic form validation
-  validates_uniqueness_of :name, :message => "That user name is already taken."
+  validates_uniqueness_of :name, :message => "is already taken."
+  validates_presence_of :name, :message => "is empty."
+
+  validates_presence_of :email, :message => "is invalid."
+  validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :message => "is empty."
+  validates_uniqueness_of :email, :message => "is already taken."
   
-  validates_presence_of :name, :message => "Please add a user name."
-  validates_presence_of :email, :message => "Please add a valid email."
-  validates_numericality_of  :zip, :message => "Please enter a valid zip"
-  validates_presence_of  :zip, :message => "Please enter a valid zip"
-  validates_presence_of  :state, :message => "Please enter a valid zip"
-  validates_presence_of  :city, :message => "Please enter a valid zip"
-  validates_length_of :zip, :minimum => 5, :message => "Zip must be 5 numbers"
-  validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :message => "Please add a valid email."
-  validates_uniqueness_of :email, :message => "That email name is already taken."
+  validates_presence_of  :state, :message => "is empty."
+  validates_presence_of  :city, :message => "is empty."
+  
+  validates_length_of :zip, :minimum => 5, :message => "needs to be 5 numbers"
+  validates_numericality_of  :zip, :message => "is not a number"
+   validates_presence_of  :zip, :message => "is empty."
   
   validates_presence_of :password
-  validates_confirmation_of :password, :password_confirmation,:message => " :passwords don't match"
-
+  validates_confirmation_of :password, :password_confirmation,:message => "don't match."
+  validates_length_of :password, :minimum => 8, :message => "must be at lest 8 characters long."
+  
   # The following two methods are 'Callbacks'. The password that comes from the form needs to be hashed
   # before being added to the database.
   # The methed "Calls Back" to the object to update the password field.

@@ -6,10 +6,7 @@
 
   <%= markdown @documentation.body %>
 
-<p>
-  <b>Published:</b>
-  <%=h @documentation.published %>
-</p>
+
 <% if admin? %>
 <%= link_to 'New', new_documentation_path %> |
 <%= link_to 'Edit', edit_documentation_path(@documentation) %> |

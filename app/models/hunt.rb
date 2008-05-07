@@ -22,13 +22,13 @@ class Hunt < ActiveRecord::Base
   attr_accessor :longitude_second
   
   # Basic form validation
-  validates_presence_of :name, :message => "Please add a title."
-  validates_presence_of :location, :message => "Please add a location"
-  validates_presence_of :length, :message => "Please choose a length"
-  validates_presence_of :difficulty, :message => "Please choose a difficulty"
-  validates_presence_of :description, :message => "Please choose a description"
-  validates_presence_of :directions, :message => "Please give brief direction to the trail head"
-  validates_presence_of :view_level, :message => "Please choose a view level"
+  validates_presence_of :name, :message => "is empty."
+  validates_presence_of :location, :message => "is empty."
+  validates_presence_of :length, :message => "is empty."
+  validates_presence_of :difficulty, :message => "is empty."
+  validates_presence_of :description, :message => "is empty."
+  validates_presence_of :directions, :message => "is empty."
+  validates_presence_of :view_level, :message => "is empty."
   
   # validates_numericality_of  :latitude_degree, :message => "Please enter a valid number"
   # validates_numericality_of  :latitude_minute, :message => "Please enter a valid number"

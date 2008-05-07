@@ -3,7 +3,7 @@
 class HuntsController < ApplicationController
 
   # Force login, unless authorized. 
-  before_filter :authorize, :except => [:index,:show,:query]  # GET /hunts.xml
+  before_filter :authorize, :except => [:index,:show,:query,:search]  # GET /hunts.xml
  
   def index
     @hunts = Hunt.find(:all, :order => "hunts.created_at DESC")
@@ -102,7 +102,12 @@ class HuntsController < ApplicationController
   def search
     @query=params[:query]
     @hunts = Hunt.find_by_contents(@query)
+    if !@hunts.empty?
      render :template => 'hunts/index'
+   else
+     flash[:notice] = 'No records were found'
+     render :template => 'hunts/query'
+   end
   end
 
   # VERY IMPORTANT If you need a method accesable by both the view and the controller,
