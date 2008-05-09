@@ -1,9 +1,0 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
-  hunt_id: 1
-  member_id: 1
-
-two:
-  hunt_id: 1
-  member_id: 1
