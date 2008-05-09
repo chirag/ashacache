@@ -2,4 +2,3 @@ tmp/*
 log/*.log
 .DS_Store
 ._*
-db/config.yml
