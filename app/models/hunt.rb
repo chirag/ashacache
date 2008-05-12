@@ -65,7 +65,7 @@ class Hunt < ActiveRecord::Base
     end
     
     # Now that you know if we have an image or not, write out the HTML for the map div.
-    map_div = "<div   style='height:\'100px\';width:\'50px\''><h1 style='font-size:15px;color:#4C1B1B;padding:0;margin:0 0 5px 0'>" + name.to_str + "</h1><img src='" +     popup_image + "' height=\'100px\' vspace=\'5px\' /></div>"
+    map_div = "<div><h1>" + name.to_str + "</h1><img src='" +     popup_image + "' height=\'100px\' vspace=\'5px\' /></div>"
   end
 
   # The next four methods are used to take the decimal representation of the map coordinates and
@@ -169,7 +169,7 @@ class Hunt < ActiveRecord::Base
         
   # Acts as ferret is a plug in that allows a model to be serched. It uses index
   # files found in the '/index' directory
-  acts_as_ferret :fields => [:name, :description]
+  acts_as_ferret :fields => [:name, :description, :location]
 
   # PROBABLY TRASH
   # def self.coordinates_from_parts parts

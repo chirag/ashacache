@@ -43,7 +43,7 @@
 					</p>
 					<p>	
 						<b>Zoom Level</b><br>
-						<%= select( "hunt", "view_level", [[ "Select a Zoom Level", "" ]] + View_level::LEVELS) %> ( higher numbers are closer to the ground 10 is normal)
+						<%= select( "hunt", "view_level", [[ "Select a Zoom Level", "" ]] + View_level::LEVELS) %> ( higher numbers are closer to the ground. 10 is normal)
 					</p>
 					<p>
 						<b>Description</b><br>
@@ -57,7 +57,7 @@
 
 					<p>
 						<b>Associate Image:</b>
-						<%= file_field 'image','uploaded_data' %>
+						<%= file_field 'image','uploaded_data' %> ( Image must be 500K or less and a 'jpg' type)
 					</p>
 	
     <%= f.hidden_field :member_id, :value=> session[:member_id] %>

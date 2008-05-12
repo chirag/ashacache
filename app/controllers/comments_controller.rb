@@ -1,7 +1,7 @@
 class CommentsController < ApplicationController
 
   # Only show public pages unless logged in.
-  before_filter :authorize, :except => [:index,:show] 
+  #before_filter :authorize, :except => [:index,:show] 
   
   # Create a comment. Link it to a particular hunt by ID
   def create

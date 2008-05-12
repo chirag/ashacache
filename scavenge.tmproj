@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/documentations/show.html.erb</string>
+	<string>vendor/plugins/ym4r_gm/javascript/markerGroup.js</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -54,9 +54,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>7</integer>
+				<integer>76</integer>
 				<key>line</key>
-				<integer>50</integer>
+				<integer>25</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -68,9 +68,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>5</integer>
+				<integer>3</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>3</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -156,14 +156,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>38</integer>
+				<integer>46</integer>
 				<key>line</key>
-				<integer>108</integer>
+				<integer>5</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
-			<integer>0</integer>
+			<integer>72</integer>
 			<key>firstVisibleLine</key>
-			<integer>60</integer>
+			<integer>5</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>41</integer>
+				<key>line</key>
+				<integer>5</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>46</integer>
+				<key>line</key>
+				<integer>5</integer>
+			</dict>
 		</dict>
 		<key>app/controllers/images_controller.rb</key>
 		<dict>
@@ -307,7 +323,7 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>app/models/faq.rb</key>
+		<key>app/models/documentation.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
@@ -315,6 +331,20 @@
 				<integer>0</integer>
 				<key>line</key>
 				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>app/models/faq.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>52</integer>
+				<key>line</key>
+				<integer>2</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -326,39 +356,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>85</integer>
+				<integer>60</integer>
 				<key>line</key>
-				<integer>149</integer>
+				<integer>44</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>128</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>84</integer>
-				<key>line</key>
-				<integer>149</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>85</integer>
-				<key>line</key>
-				<integer>149</integer>
-			</dict>
+			<integer>48</integer>
 		</dict>
 		<key>app/models/image.rb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>83</integer>
+				<integer>26</integer>
 				<key>line</key>
-				<integer>11</integer>
+				<integer>12</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -370,9 +384,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>29</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>31</integer>
+				<integer>14</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -383,16 +397,16 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>26</integer>
+				<integer>57</integer>
 				<key>line</key>
-				<integer>31</integer>
+				<integer>14</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
-				<integer>29</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>31</integer>
+				<integer>14</integer>
 			</dict>
 		</dict>
 		<key>app/models/postoffice.rb</key>
@@ -602,14 +616,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>47</integer>
+				<integer>76</integer>
 				<key>line</key>
-				<integer>17</integer>
+				<integer>19</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>19</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>20</integer>
+			</dict>
 		</dict>
 		<key>app/views/documentations/new.html.erb</key>
 		<dict>
@@ -630,9 +660,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>64</integer>
 				<key>line</key>
-				<integer>8</integer>
+				<integer>11</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -674,9 +704,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>41</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>11</integer>
 			</dict>
 			<key>columnSelection</key>
 			<false/>
@@ -687,16 +717,16 @@
 			<key>selectFrom</key>
 			<dict>
 				<key>column</key>
-				<integer>6</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>20</integer>
+				<integer>11</integer>
 			</dict>
 			<key>selectTo</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>2</integer>
+				<integer>12</integer>
 			</dict>
 		</dict>
 		<key>app/views/faqs/new.html.erb</key>
@@ -718,53 +748,37 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>13</integer>
-				<key>line</key>
 				<integer>0</integer>
+				<key>line</key>
+				<integer>17</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>0</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>1</integer>
-			</dict>
 		</dict>
 		<key>app/views/hunts/edit.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>169</integer>
+				<integer>91</integer>
 				<key>line</key>
-				<integer>31</integer>
+				<integer>43</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>16</integer>
+			<integer>24</integer>
 		</dict>
 		<key>app/views/hunts/index.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>9</integer>
 				<key>line</key>
-				<integer>1</integer>
+				<integer>24</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -776,14 +790,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>151</integer>
+				<integer>139</integer>
 				<key>line</key>
 				<integer>45</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>19</integer>
+			<integer>38</integer>
 		</dict>
 		<key>app/views/hunts/query.html.erb</key>
 		<dict>
@@ -820,44 +834,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>9</integer>
+				<integer>5</integer>
 				<key>line</key>
-				<integer>35</integer>
+				<integer>20</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>31</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>6</integer>
-				<key>line</key>
-				<integer>35</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>14</integer>
-				<key>line</key>
-				<integer>35</integer>
-			</dict>
+			<integer>18</integer>
 		</dict>
 		<key>app/views/layouts/application.html.erb</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>18</integer>
 				<key>line</key>
-				<integer>32</integer>
+				<integer>47</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>6</integer>
+			<integer>26</integer>
 		</dict>
 		<key>app/views/members/edit.html.erb</key>
 		<dict>
@@ -1201,7 +1199,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>2</integer>
+			<integer>0</integer>
 		</dict>
 		<key>db/development.sqlite3</key>
 		<dict>
@@ -1683,19 +1681,33 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>public/presentation.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>11</integer>
+				<key>line</key>
+				<integer>11</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>public/stylesheets/global.css</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>17</integer>
 				<key>line</key>
-				<integer>492</integer>
+				<integer>297</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>464</integer>
+			<integer>263</integer>
 		</dict>
 		<key>public/stylesheets/prettify.css</key>
 		<dict>
@@ -1809,6 +1821,76 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>vendor/plugins/ym4r_gm/init.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>vendor/plugins/ym4r_gm/install.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>vendor/plugins/ym4r_gm/javascript/clusterer.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>100</integer>
+		</dict>
+		<key>vendor/plugins/ym4r_gm/javascript/markerGroup.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>42</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>vendor/plugins/ym4r_gm/javascript/wms-gs.js</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb</key>
 		<dict>
 			<key>caret</key>
@@ -1838,6 +1920,48 @@
 				<key>line</key>
 				<integer>16</integer>
 			</dict>
+		</dict>
+		<key>vendor/plugins/ym4r_gm/tasks/gm_tasks.rake</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>vendor/plugins/ym4r_gm/test/gm_test.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>vendor/plugins/ym4r_mapstraction/init.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
 		</dict>
 		<key>vendor/plugins/ym4r_mapstraction/lib/mapstraction_plugin/routing.rb</key>
 		<dict>
@@ -1877,6 +2001,14 @@
 		<string>config/database.yml</string>
 		<string>vendor/plugins/ym4r_gm/lib/gm_plugin/key.rb</string>
 		<string>vendor/plugins/ym4r_gm/gmaps_api_key.yml.sample</string>
+		<string>vendor/plugins/ym4r_gm/init.rb</string>
+		<string>vendor/plugins/ym4r_gm/install.rb</string>
+		<string>vendor/plugins/ym4r_gm/javascript/clusterer.js</string>
+		<string>vendor/plugins/ym4r_gm/javascript/markerGroup.js</string>
+		<string>vendor/plugins/ym4r_gm/tasks/gm_tasks.rake</string>
+		<string>vendor/plugins/ym4r_gm/test/gm_test.rb</string>
+		<string>vendor/plugins/ym4r_mapstraction/init.rb</string>
+		<string>vendor/plugins/ym4r_gm/javascript/wms-gs.js</string>
 		<string>db/development.sqlite3</string>
 		<string>idea.txt</string>
 		<string>app/views/hunts/show.html.erb</string>
@@ -1930,6 +2062,7 @@
 		<string>db/migrate/004_create_comments.rb</string>
 		<string>app/models/comment.rb</string>
 		<string>app/models/faq.rb</string>
+		<string>app/models/documentation.rb</string>
 		<string>app/helpers/application_helper.rb</string>
 		<string>app/views/hunts/edit.html.erb</string>
 		<string>lib/tasks/lance.rake</string>
@@ -1958,6 +2091,7 @@
 		<string>app/models/image.rb</string>
 		<string>app/models/hunt.rb</string>
 		<string>app/models/postoffice.rb</string>
+		<string>public/presentation.html</string>
 		<string>app/views/postoffice/welcome.text.html.erb</string>
 		<string>app/views/postoffice/reset.text.html.erb</string>
 		<string>app/views/postoffice/reset.text.plain.erb</string>
@@ -1968,6 +2102,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{4, 0}, {988, 778}}</string>
+	<string>{{0, 0}, {992, 1002}}</string>
 </dict>
 </plist>
