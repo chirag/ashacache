@@ -287,7 +287,17 @@ border: solid 1px #4C1B1B; /* rust */
 #map_div {
 border: solid 1px #4C1B1B; /* rust */
 margin-top:20px;
+height:100px;
+width:50px;
 }
+
+#map_div h1 {
+font-size:15px;
+color:#4C1B1B;
+padding:0;
+margin:0 0 5px 0;	
+}
+
 
 /* ------------------------< hunt sub nav >------------------------ */
 

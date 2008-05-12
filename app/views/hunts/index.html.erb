@@ -12,16 +12,17 @@
 <h2><%=h hunt.location %></h2>
 <h3><b>Submitted by:</b> <%=h Member.find(hunt.member_id).name %></h3>
 <%= markdown truncate(hunt.description,1050, "...") %></div>
-	<ul class="huntSubNav">
+	
 
 <% if current_member or admin? %>
 	<% if Member.find(hunt.member_id).id == current_member.id or admin? %>
+	<ul class="huntSubNav">
 	<li><%= link_to 'Show', hunt %></li>
 	<li><%= link_to 'Edit', edit_hunt_path(hunt) %></li>
 	<li><%= link_to 'Destroy', hunt, :confirm => 'Are you sure?', :method => :delete %></li>
-
+	</ul>
 	<% end %>
 <% end %>
-</ul></div>
+</div>
 
 <% end %>

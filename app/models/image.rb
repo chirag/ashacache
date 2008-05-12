@@ -10,6 +10,6 @@ class Image < ActiveRecord::Base
                    :resize_to => '400x400>'
 
   # Runs the validation on the image to make sure it is within the above parameters
-  validates_as_attachment
+  validates_as_attachment 
 end
 

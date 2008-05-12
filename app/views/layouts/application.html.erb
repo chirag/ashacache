@@ -11,29 +11,31 @@
 	<body>
 	<div id="adminNav">
 		<div id="adminRightFloater">
-		<ul>
 			<% unless logged_in?  %>
 				<form action="/login" method="post">
+					<ul>
 					<li>Member Name: <%= text_field_tag 'name' %></li>
 					<li>Pasword: <%= password_field_tag 'password' %></li>
 					<li><%= submit_tag 'Login' %></li>
 				
 				<li><i>or</i> <a href="/signup/">Signup</a></li>
 				<%= token_tag %>
+			</ul>
 				</form>
 			<% else %>
+			<ul>
 			<li>Logged in as <%= current_member.name %>: </li>
 			<li><%= link_to 'Profile', member_path(current_member) %></li>
 			<li><%= link_to 'New hunt', new_hunt_path %></li>
 			<li><a href='/logout'>Logout</a></li>
-			<% end %>
 		</ul>
+			<% end %>
 	</div>
 	</div>
 <div id="wrapper">
 	<div id="header">
 		<h1><%= link_to 'Ashacache', hunts_path %></h1>
-		<h2>A site for geocacheing enthusiasts </h2>
+		<h2>A site for geocaching enthusiasts. </h2>
 	</div>
 	<ul id ="mainNav">
 	<li><%= link_to "Contact Us", new_contact_path %></li>
@@ -43,7 +45,7 @@
 	<li><%= link_to 'Hunts', hunts_path %></li>
 	</ul>
 	<p class="flash" style="color: green"><%= flash[:notice] %></p>
-<br clear="both" />
+<br clear="all" />
 <%= yield  %>
 </div>
 <div id='copyright'>
@@ -51,7 +53,7 @@
 	<li>&copy; 2008 Ashacache</li>
 	<li><%= link_to "Password Reset", "/lost" %></li>
 	<li><%= link_to "Documentation", documentation_path(1) %></li>
-	<li><%= link_to "Presentation",  "http://docs.google.com/Present?docid=dgfnmjh_16gsrztmfj&invite=fs8jz4h" %></li>
+	<li><%= link_to "Presentation",  "http://docs.google.com/Presentation?id=dgfnmjh_16gsrztmfj" %></li>
 </ul>
 </div>
 </body>
