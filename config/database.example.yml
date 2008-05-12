@@ -1,0 +1,16 @@
+development:  
+  adapter: mysql
+  database: scavenger_development
+  username: root
+  password:
+
+test:
+  adapter: sqlite3
+  database: ':memory:'
+  verbosity: silent
+
+production:
+  adapter: mysql
+  database: scavenger_production
+  username: root
+  password:
